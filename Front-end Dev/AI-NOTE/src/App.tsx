@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Header from './component/header'
 import Hero from './component/hero'
-import Trascription from './component/trascription'
+import Transcription from './component/transcription'
 import TranscriptionText from './component/TranscriptionText'
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Trascription />
+      <Transcription />
       <TranscriptionText />
     </div>
   )
