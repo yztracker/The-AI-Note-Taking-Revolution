@@ -1,0 +1,55 @@
+  /* ------------ Container ---------------------------*/
+
+  .bluecontainer {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 6px;
+    background-color: var(--color-lightblue);
+    box-shadow: 8px 8px 12px 0 rgba(83, 97, 255, 0.12),
+        -8px -8px 12px 0 rgba(255, 255, 255, 0.5);
+    padding: 90px;
+  }
+
+  .selectcontainer{
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted black;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 10px;
+
+  }
+
+  .selectcontainer:hover{
+background: rgb(126, 188, 126);
+
+  }
+
+  .editor-container {
+    height: 300px; // Replace 300px = any number you want
+    width: 60vw;
+}
+
+
+
+  .containerbox {
+    background-color: var(--color-alternative);
+    width: 100%;
+    max-width: 600px;
+    padding: 100px 50px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-around;
+  }
+  
+.profileHeader{
+width:28%;
+background-color: var(--color-alternative);
+height: 100vh;
+
+}
+  

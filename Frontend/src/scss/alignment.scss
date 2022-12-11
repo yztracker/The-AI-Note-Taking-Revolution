@@ -1,0 +1,66 @@
+/*--------- horizontal ----------------*/
+
+.flexcolumn 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .flexrow {
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.flexcolumn--allcenter {
+    justify-content: center;
+    align-items: center
+}
+
+.alignhorizontal-center {
+    align-items: center;
+}
+
+.alignhorizontal-wideapart {
+    justify-content: space-between;
+}
+
+.alignhorizontal-custom {
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wideapart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+
+
+
+

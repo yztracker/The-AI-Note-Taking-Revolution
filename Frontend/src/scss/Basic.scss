@@ -1,0 +1,237 @@
+:root {
+    --color-primary: #19191d;
+    --color-accent: rgba(255, 255, 255, 0.24);
+    --color-background: #e0f7fa;
+    --color-outline: #1d3557;
+    --color-highlight: #06d6a0;
+    --color-headings: #f7f8f8;
+    --color-secondaryFont: #ffffffb8;
+    --color-instructions: #8b8c9b;
+    --color-danger: #ed4e50;
+    --color-lightblue: #f4f6ff;
+    --color-alternative: #4841413d;
+  }
+
+  body {
+      background: var(--color-lightblue);
+  }
+
+
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6 * 10px;
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: var(--color-primary);
+    margin-bottom: 1.2 * 10px;
+    line-height: 1.1;
+  }
+  
+  .h1 {
+    font-size: 3.6 * 10px;
+    font-weight: 700;
+  }
+  
+  .h2 {
+    font-size: 2.6 * 10px;
+  }
+  
+  .h3 {
+    font-size: 2 * 10px;
+  }
+  
+  p {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: var(--color-primary);
+  }
+
+/*-----------Links---------------------------*/
+
+a {
+    text-decoration: none;
+  }
+  
+  .link-style {
+    color: var(--color-blue);
+    font-style: normal;
+  }
+  
+  /*---------button---------------------*/
+  .btnn {
+    line-height: 3.6 * 10px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 0;
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 0.3 * 10px;
+    padding-bottom: 0.3 * 10px;
+    margin: 1 * 10px 0;
+    width: 230px;
+    margin-top: 2 * 10px;
+    margin-bottom: 2 * 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .btnn-text {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .btnn-primary {
+    background: #5567e7;
+    color: var(--color-headings);
+  }
+  
+  
+  
+  .btnn-secondary {
+    background: #ffffff3d;
+    border: 1px solid var(--color-outline);
+    // padding: 12px;
+    margin: 10px;
+  }
+  
+  .btnn-disable {
+    background: #5567e7;
+    color: var(--color-headings);
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+  .btnn-strech {
+    width: 26 * 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .btnn-strech {
+      width: 40 * 10px;
+    }
+  }
+
+/*----------inputs--------------------*/
+
+.label-style {
+    font-size: 1.6 * 10px;
+    color: var(--color-primary);
+    line-height: 2.4 * 10px;
+}
+
+.label-style-light {
+    color: var(--color-primary);
+}
+
+.label-style-dark {
+    font-size: medium;
+    color: var(--color-headings);
+    padding: 1 * 10px;
+}
+
+.input--custom {
+    border: 2px solid #cfd7fd;
+    padding: 2 * 10px;
+    display: block;
+    height: 4.5 * 10px;
+    width: 26 * 10px;
+    border-radius: 7px;
+    margin: 0;
+}
+.input--custom:focus {
+    border-color: var(--color-blue);
+}
+
+.input-bundle {
+    margin-top: 1.6 * 10px;
+    margin-bottom: 2.6 * 10px;
+}
+
+.input--custom::placeholder {
+    border-color: var(--color-highlighttext);
+    font-size: medium;
+}
+
+.input--dark {
+    margin-bottom: 1 * 10px;
+    padding: 1 * 10px;
+    border: 1px solid var(--color-accent);
+    background: var(--color-alternative);
+    color: var(--color-headings);
+    outline: 0;
+}
+
+.input--dark:focus {
+    border-color: var(--color-blue);
+}
+
+.input--dark::placeholder {
+    border-color: var(--color-highlighttext);
+    font-size: medium;
+}
+
+@media screen and (min-width: 768px) {
+    .input--custom {
+        width: 40 * 10px;
+    }
+
+    .input-daterange {
+        padding: 2rem;
+    }
+    
+.input--width {
+  height: 220px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+    .input--custom {
+        width: 40 * 10px;
+    }
+}
+
+/*------------- Alert box -------------------------*/
+
+.alertmessage {
+    color: var(--color-danger);
+    font-size: 1.5 * 10px;
+    font-weight: 500;
+    padding: 0.5 * 10px;
+    padding-bottom: 2.5 * 10px;
+}
+
+
+
+
+  /* ------------ Container ---------------------------*/
+
+  .containerbox {
+  background-color: var(--color-alternative);
+  width: 100%;
+  max-width: 600px;
+  padding: 100px 50px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+  justify-content: space-around;
+}
+
