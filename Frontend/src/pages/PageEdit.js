@@ -5,9 +5,10 @@ import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import parse from 'html-react-parser';
 import Highlighter from "react-highlight-words";
+import Reamtime from '../component/realtime'
 
 function PageEdit(props) {
-    const [value, setValue] = useState('This is the value intially');
+    const [value, setValue] = useState('efef');
     const [imageState, setImageState] = useState('https://pbs.twimg.com/profile_banners/18551759/1668616935/1500x500')
     const [formState, setFormState] = useState("edit")
 
@@ -32,11 +33,13 @@ function PageEdit(props) {
        return parse(value).props.children
     }
 
+    console.log(value)
 
    
 
     return (
         <div style={{width:"100vw", display:"flex"}}>
+            <Reamtime setValue={setValue}/>
                 {formState==="edit"?<div style={{margin:"50px"}} class="editor-container" >
                     <div className='flexrow wideapart'>
                         <h3>Todays' note</h3>
@@ -52,13 +55,14 @@ function PageEdit(props) {
                         <h2>Todays' note</h2>
                         <button onClick={handleEdit}className='btnn btnn-small'>Edit note</button>
                     </div>
-
-                    <Highlighter
+                    <p>{getValue}</p>
+                    {/* <p>{getValue()}</p> */}
+                    {/* <Highlighter
     highlightClassName="YourHighlightClass"
     searchWords={["and", "or", "the"]}
     autoEscape={true}
     textToHighlight={getValue()}
-  />
+  /> */}
 
                     </div>
                 </div>
