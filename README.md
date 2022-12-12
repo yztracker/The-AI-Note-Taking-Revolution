@@ -8,7 +8,7 @@ Whether you're a student, a business professional, or anyone else looking to imp
 ## What it does
 - transcription audio in real time
 - generate image by prompt (transcribe )
-- conbine image and note together
+- combine image and note together
 
 ## How we built it
 Using different AI model with api integration frontend and backend
